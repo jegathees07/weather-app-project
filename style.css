@@ -1,0 +1,83 @@
+body{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-variant: small-caps;
+    background-image: url(assets/japan-background-digital-art.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+h1{
+    text-align: center;
+    color: rgb(255, 255, 255);
+}
+form{
+    text-align: center;
+}
+.card{
+    width: 40%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.644);
+    padding: 20px 10px;
+    box-shadow: 5px 5px 5px hsla(0, 0%, 3%, 0.144);
+}
+.cityDisplay{
+    font-size: 30px;
+    font-weight: 900;
+    color: rgb(255, 255, 255);
+}
+.errorDisplay{
+    font-size: 20px;
+    font-weight: 700;
+}
+button{
+    padding: 8px 15px;
+    background-color: rgb(0, 38, 255);
+    border-radius: 20px;
+    border: none;
+    color: white;
+    border: 1px solid white;
+}
+input{
+    height: 34px;
+    width: 40%;
+    font-size: 16px;
+    border-radius: 20px;
+    border: none;
+    padding: 0px 10px;
+}
+.weatherEmoji{
+    font-size: 50px;
+    margin: 0;
+}
+.content{
+    font-size: 22px;
+    font-weight: 600;
+    color:rgb(0, 0, 0);
+}
+.weatherForm{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+::placeholder{
+    font-size: 14px;
+}
+@media(max-width:480px){
+    .weatherForm{
+        flex-direction: column;
+    }
+    input{
+        width: 90%;
+    }
+    .card{
+        width: 70%;
+    }
+}
